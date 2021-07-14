@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính </title>
+    <style>
+
+        input {
+            height: 30px;
+            width: 150px;
+        }
+        .clo2{
+            width: 610px;
+        }
+    </style>
+</head>
+<body>
+ <form name="calculator">
+
+<table>
+    <tr>
+       <td colspan="4"> <input class="clo2" type="text" name="display" disabled></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" onclick="calculator.display.value += 1"></input></td>
+        <td><input type="button" value="2" onclick="calculator.display.value += 2"></input></td>
+        <td><input type="button" value="3" onclick="calculator.display.value +=3"></input></td>
+        <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += `+`"></input></td>
+
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onclick="calculator.display.value += 4"></input></td>
+        <td><input type="button" value="5" onclick="calculator.display.value += 5"></input></td>
+        <td><input type="button" value="6" onclick="calculator.display.value += 6"></input></td>
+        <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += `-`"></input></td>
+
+    </tr>
+    <tr>
+        <td><input type="button" value="7" onclick="calculator.display.value += 7"></input></td>
+        <td><input type="button" value="8" onclick="calculator.display.value += 8"></input></td>
+        <td><input type="button" value="9" onclick="calculator.display.value += 9"></input></td>
+        <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += `*`"></input></td>
+
+    </tr>
+    <tr>
+        <td><input type="reset" class="operator" id="clear" value="C" += `C`"></input></td>
+        <td><input type="button" class="operator" name="zero" value="0" onclick="calculator.display.value += '0'"></input></td>
+        <td><input type="button" class="operator" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></input></td>
+        <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+
+    </tr>
+
+
+</table>
+ </form>
+
+</body>
+</html>
+<script>
+    function f() {
+
+    }
+</script>
